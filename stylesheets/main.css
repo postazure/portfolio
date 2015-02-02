@@ -1,9 +1,21 @@
 body {
-  padding: 60px;
+  padding: 40px;
 }
 
 #container {
-  width:90%;
+  width:85%;
   margin-right:auto;
   margin-left:auto;
+}
+
+.active.item {
+  pointer-events: none;
+}
+/*
+#content-panel {
+  height: 80vh;
+}*/
+
+i.down {
+  cursor: pointer;
 }

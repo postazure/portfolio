@@ -1,78 +1,374 @@
 <!doctype html>
 <html>
-  <head>
-    <title></title>
-    <script src="/bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-    <script src="/bower_components/semantic-ui/dist/semantic.js" charset="utf-8"></script>
-    <script src="/javascripts/main.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="/bower_components/semantic-ui/dist/semantic.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    <div id="container">
-      <div class="ui grid">
-        <div class="four wide column">
-
-          <div class="ui card">
-            <div class="image">
-              <img src="/public/images/card_Max.jpg">
+<head>
+  <title></title>
+  <script src="/bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="/bower_components/semantic-ui/dist/semantic.js" charset="utf-8"></script>
+  <script src="/javascripts/main-menu.js" charset="utf-8"></script>
+  <script src="/javascripts/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/bower_components/semantic-ui/dist/semantic.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div id="container">
+    <div class="ui grid">
+      <div class="four wide column">
+        <div class="ui card">
+          <div class="image">
+            <img src="/public/images/card_Max.jpg">
+          </div>
+          <div class="content">
+            <a class="header" href="mailto:gordonmaxc@gmail.com" target="_blank">Max Gordon</a>
+            <a class="ui red ribbon label" href="https://www.linkedin.com/in/maxcgordon" target="_blank">
+              Available Hire April 2015
+            </a>
+            <div class="meta">
+              <span class="date"></span>
             </div>
-            <div class="content">
-              <a class="header" href="mailto:gordonmaxc@gmail.com">Max Gordon</a>
-              <div class="meta">
-                <span class="date">Available in April 2015</span>
-              </div>
-              <div class="description">
-                [Sort Bio Goes Here]
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://github.com/postazure">
-                <i class="user large github icon"></i>
-              </a>
-              <a href="https://twitter.com/postazure">
-                <i class="user large twitter icon"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/maxcgordon">
-                <i class="user large linkedin icon"></i>
-              </a>
-              <a href="https://medium.com/@Postazure">
-                <i class="user large quote right icon"></i>
-              </a>
-            </div>
-
-            <div class="extra content">
-              <a href="mailto:gordonmaxc@gmail.com">
-                gordonmaxc@gmail.com
-              </a>
+            <div class="description">
+              <p>Junior Web Developer</p>
+              <p>Ruby on Rails & JavaScript</p>
             </div>
           </div>
+          <div class="extra content">
+            <a href="https://github.com/postazure" target="_blank">
+              <i class="user large github icon"></i>
+            </a>
+            <a href="https://twitter.com/postazure" target="_blank">
+              <i class="user large twitter icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maxcgordon" target="_blank">
+              <i class="user large linkedin icon"></i>
+            </a>
+            <a href="https://medium.com/@Postazure" target="_blank">
+              <i class="user large quote right icon"></i>
+            </a>
+          </div>
 
+          <div class="extra content">
+            <a href="mailto:gordonmaxc@gmail.com" target="_blank">
+              gordonmaxc@gmail.com
+            </a>
+          </div>
         </div>
+      </div>
 
-        <div class="twelve wide column">
+      <div class="twelve wide column">
+        <div class="ui piled segment">
+          <div class="ui top pointing fluid three item menu" id="menu-bar">
 
-          <div class="ui pointing menu">
             <a class="active item">
-              <i class="home icon"></i> Home
+              <i class="user icon"></i> About
             </a>
             <a class="item">
-              <i class="lab icon"></i> Projects
+              <i class="folder icon"></i> Projects
             </a>
             <a class="item">
               <i class="game icon"></i> Games
             </a>
-            <a class="item">
-              <i class="user icon"></i> About
-            </a>
-
           </div>
 
+          <div id="content-panel">
+            <div id="about-content">
+              <img class="ui large bordered rounded right floated image" src="/public/images/max_group_photo.jpg">
+              <h2>What Makes Me Tick</h2>
+              <h3 class="ui header">
+                Web Apps
+                <div class="sub header">Ruby on Rails, JavaScript</div>
+              </h3>
+              <p>
+                [I like making web apps, they are great. This is not the finished
+                content because that sux.]
+              </p>
+              <p>
+                [I will write better stuff soon-ish.]
+              </p>
+              <h3 class="ui header">
+                Internet of Things
+                <div class="sub header">Arduino, Raspberry Pi</div>
+              </h3>
+              <p>
+                [I think that these things are cool. They are like wow, and stuff.
+                This is also totally a placeholder for some actually cool content.
+                I just wanted to write something since content is apparently importaint
+                don't you know!?]
+              </p>
+              <p>
+                [But seriously. Arduinos are cool cus they like do stuff man. Cool stuff.
+                The also cost very little money so you could make some disposable
+                devices. Raspberry Pis are cool too. I want to set up lots of Arduinos
+                and have them all talk to the Pi.]
+              </p>
+              <div class="ui divider"></div>
 
+              <h2>Education</h2>
+              <h3 class="ui header">
+                Galvanize | gSchool
+                <div class="sub header">Full Stack Developer</div>
+              </h3>
+              <h3 class="ui header">
+                Metropolitan State College of Denver
+                <div class="sub header">BS Business Management</div>
+              </h3>
+
+              <div class="ui divider"></div>
+              <h2>Work Experience</h2>
+              <h3 class="ui header">
+                Customer Service Supervisor | TS2
+                <div class="sub header">UMB Bank Colorado</div>
+              </h3>
+
+            </div> <!--About-->
+
+            <div id="projects-content">
+              <div class="ui three column grid">
+                <div class="column">
+
+
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://shielded-beach-1758.herokuapp.com/" target="_blank">
+                          Order Now
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          Find the restaurant and service that can make a delivery to you
+                          in San Francisco, even at dinner time.
+                        </p>
+                        <p>
+                          When you make it home from a long day of work and just want to
+                          decompress, the last thing you want to have to deal with is
+                          making dinner. You should probably place a delivery order.
+                          The only problem is your hungry now and all the restaurants you
+                          normaly get delivery from are posting an hour and a half wait.
+                        </p>
+                        <p>
+                          Order Now to the rescue. Search for the kind of food you want
+                          and this app will find the fastest way to get it to you.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">Multiple Search Providers</div>
+                        <div class="ui label">Real Time Updates</div>
+                        <div class="ui label">Custom Sorting Algorithm</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/Order-Now-App" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="https://shielded-beach-1758.herokuapp.com/" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="column">
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://postazure-secret-santa.herokuapp.com/users/sign_in" target="_blank">
+                          Secret Santa Selector
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          Make that secret santa drawing go by without a hitch.
+                        </p>
+                        <p>
+                          Each year our family draws names out of a hat, but you're
+                          not allowed to draw yourself or your spouse. With three
+                          couples, the odds are pretty good you'll have to draw again...
+                          and again... and again. Enter Secret Santa Selector, a simple
+                          web app to perform the drawing and email each member secretly
+                          so that even the organizer can join in the suprise.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">User Authentication and Authorization</div>
+                        <div class="ui label">SendGrid Api</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/Secret_Santa_Stocking_Selector" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="https://postazure-secret-santa.herokuapp.com/users/sign_in" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
+                          Reddit Clone
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          A simple recreation of forum board. Post content or comment on previous posts.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">User Authentication and Authorization</div>
+                        <div class="ui label">Bootstrap</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/reddit_clone" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://guarded-waters-2139.herokuapp.com/" target="_blank">
+                          gCamp | Basecamp Clone
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          A simplified version of a project management application.
+                          Create an account, establish a project, add team members
+                          and assign tasks.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">User Authentication and Authorization</div>
+                        <div class="ui label">Bootstrap</div>
+                        <div class="ui label">Database Association</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/gCamp" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="https://guarded-waters-2139.herokuapp.com/" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Cards -->
+            </div> <!--Projects-->
+
+            <div id="games-content">
+
+              <div class="ui two column grid">
+                <div class="column">
+                  <div class="ui fluid card">
+                    <div class="image">
+                      <div class="ui video" data-source="youtube" data-id="r7cDwFBCymA" data-image="/public/images/boredom_simulator_screen.png"></div>
+                    </div>
+                    <div class="content">
+                      <div class="header">
+                        <a href="http://www.boredomsimulator.com/" target="_blank">
+                          Boredom Simulator
+                        </a>
+                      </div>
+                      <div class="meta">
+                        JavaScript Game
+                      </div>
+                      <div class="description">
+                        <p>
+                          It's Saturday night, you are waiting for your friends to
+                          come pick you up. Maintain your boredom levels or you might
+                          just fall asleep and miss your friends picking you up.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">Vanilla JS</div>
+                        <div class="ui label">jQuery</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/Myztiq/boredom-simulator" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="http://globalgamejam.org/2015/games/boredom-simulator" target="_blank">
+                        <i class="user large game icon"></i>
+                        Star Game
+                      </a>
+                      <div class="ui divider"></div>
+
+                      <a href="http://globalgamejam.org/2015/games/boredom-simulator" target="_blank">
+                        <i class="user large book icon"></i>
+                        Global Game Jam
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="ui fluid card">
+                    <div class="ui large image">
+                      <div class="ui video" data-source="youtube" data-id="mVqo9PKkIG0" data-image="/public/images/drones_screen.png"></div>
+                    </div>
+                    <div class="content">
+                      <div class="header">
+                        <a href="http://www.downwiththedrones.com/" target="_blank">
+                          Down With The Drones
+                        </a>
+                      </div>
+                      <div class="meta">
+                        JavaScript Game
+                      </div>
+                      <div class="description">
+                        <p>
+                          Get your swarm of mind controlled followers into their
+                          respective holes. Each wrong step will cost you and all the
+                          while the clock is counting down.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">Impact JS</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/Myztiq/downWithDrones" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="http://www.downwiththedrones.com/" target="_blank">
+                        <i class="user large game icon"></i>
+                        Start Game
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Cards -->
+            </div> <!--Games-->
+
+          </div>
         </div>
-
-
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
