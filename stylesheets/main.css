@@ -1,9 +1,9 @@
 body {
-  padding: 40px;
+  padding: 20px;
 }
 
 #container {
-  width:85%;
+  width:90%;
   margin-right:auto;
   margin-left:auto;
 }
@@ -18,4 +18,26 @@ body {
 
 i.down {
   cursor: pointer;
+}
+
+
+.img-caption {
+  position: realtive;
+  overflow:hidden;
+}
+.img-caption p{
+  position:absolute;
+  opacity: 0.9;
+  bottom: 0px;
+  right: 0px;
+}
+
+#medium-container {
+  height: 310px;
+  overflow: scroll;
+}
+
+#medium-frame {
+  position: absolute;
+top: -250px;
 }
