@@ -8,9 +8,9 @@ body {
   margin-left:auto;
 }
 
-#content-panel > div {
+/*#content-panel > div {
   height: 75vh;
-}
+}*/
 
 .active.item {
   pointer-events: none;

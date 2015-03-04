@@ -134,8 +134,7 @@
 
             <div id="projects-content">
               <div class="ui three column grid">
-                <div class="column">
-
+                <div class="column"> <!-- Column 1 -->
 
                   <div class="ui fluid card">
                     <div class="content">
@@ -182,7 +181,90 @@
                   </div>
 
                 </div>
-                <div class="column">
+                <div class="column"> <!-- Column 2 -->
+
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://postazure-t-heatmap-display.herokuapp.com/" target="_blank">
+                          Twitter Heat Map
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ember, Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          Plots tweets by location in San Francisco.
+                        </p>
+                        <p>
+                          Using Heroku Scheduler to run rake tasks to
+                          collects recent tweets and displays them on a map of
+                          San Francisco. This application requires a custom record
+                          serializer to output side-loaded json. The popular gem
+                          for record serializers does not handle 'many-to-many'
+                          associations properly.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">Twitter API</div>
+                        <div class="ui label">Mapbox API</div>
+                        <div class="ui label">Rake Tasks</div>
+                        <div class="ui label">Ember Data</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/twitter-heatmap-FrontEnd" target="_blank">
+                        <i class="user large github icon"></i>
+                        App Repo
+                      </a>
+                      <a href="https://postazure-t-heatmap-display.herokuapp.com/" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/twitter-heatmap-API" target="_blank">
+                        <i class="user large github icon"></i>
+                        API Repo
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="ui fluid card">
+                    <div class="content">
+                      <div class="header">
+                        <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
+                          Reddit Clone
+                        </a>
+                      </div>
+                      <div class="meta">
+                        Ruby on Rails
+                      </div>
+                      <div class="description">
+                        <p>
+                          A simple recreation of forum board. Post content or comment on previous posts.
+                        </p>
+                        <div class="ui divider"></div>
+                        <div class="ui label">User Authentication and Authorization</div>
+                        <div class="ui label">Bootstrap</div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="right floated" href="https://github.com/postazure/reddit_clone" target="_blank">
+                        <i class="user large github icon"></i>
+                        Repo
+                      </a>
+                      <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
+                        <i class="user large desktop icon"></i>
+                        Launch App
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="column"> <!-- Column 3 -->
+
+
                   <div class="ui fluid card">
                     <div class="content">
                       <div class="header">
@@ -216,38 +298,6 @@
                         Repo
                       </a>
                       <a href="https://postazure-secret-santa.herokuapp.com/users/sign_in" target="_blank">
-                        <i class="user large desktop icon"></i>
-                        Launch App
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="ui fluid card">
-                    <div class="content">
-                      <div class="header">
-                        <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
-                          Reddit Clone
-                        </a>
-                      </div>
-                      <div class="meta">
-                        Ruby on Rails
-                      </div>
-                      <div class="description">
-                        <p>
-                          A simple recreation of forum board. Post content or comment on previous posts.
-                        </p>
-                        <div class="ui divider"></div>
-                        <div class="ui label">User Authentication and Authorization</div>
-                        <div class="ui label">Bootstrap</div>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <a class="right floated" href="https://github.com/postazure/reddit_clone" target="_blank">
-                        <i class="user large github icon"></i>
-                        Repo
-                      </a>
-                      <a href="https://glacial-castle-8303.herokuapp.com/" target="_blank">
                         <i class="user large desktop icon"></i>
                         Launch App
                       </a>
@@ -287,6 +337,7 @@
                       </a>
                     </div>
                   </div>
+
                 </div>
               </div> <!-- Cards -->
             </div> <!--Projects-->
