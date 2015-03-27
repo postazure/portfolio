@@ -1,0 +1,23 @@
+{
+  "name": "Postazure.com",
+  "version": "0.0.0",
+  "homepage": "http://www.postazure.com",
+  "authors": [
+    "Max Gordon <gordonmaxc@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~1.8.1",
+    "jquery": "~2.1.3"
+  },
+  "resolutions": {
+    "semantic-ui": "~1.11.6"
+  }
+}
