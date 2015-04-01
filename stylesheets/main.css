@@ -8,17 +8,9 @@ body {
   margin-left:auto;
 }
 
-/*#content-panel > div {
-  height: 75vh;
-}*/
-
 .active.item {
   pointer-events: none;
 }
-/*
-#content-panel {
-  height: 80vh;
-}*/
 
 i.down {
   cursor: pointer;
@@ -36,11 +28,11 @@ i.down {
 }
 
 #medium-container {
-  height: 320px;
+  height: 200px;
   overflow: scroll;
 }
 
 #medium-frame {
   position: absolute;
-top: -250px;
+  top: -250px;
 }
