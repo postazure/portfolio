@@ -1,5 +1,5 @@
 import React from "react"
-import List from "./skills-list"
+import SkillsList from "./skills-list"
 
 export default class ProfileCard extends React.Component {
   render() {
@@ -9,7 +9,7 @@ export default class ProfileCard extends React.Component {
         <h2 className="title">{this.props.title}</h2>
         <div className="company-name">{this.props.company}</div>
 
-        <List items={this.props.skills} className="skill-list"/>
+        <SkillsList items={this.props.skills}/>
         <div>Social List</div>
       </div>
     )

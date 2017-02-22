@@ -1,15 +1,15 @@
 import React from "react"
-
+import './skill-list.scss'
 export default class SkillsList extends React.Component {
   renderItem() {
     return this.props.items.map((item, i) => {
-      return <li className="item" key={i}>{item.title}</li>
+      return <li key={i}>{item.title}</li>
     })
   }
 
   render() {
     return (
-      <ul className={this.props.className}>
+      <ul className="skill-list">
         {this.renderItem()}
       </ul>
     )
