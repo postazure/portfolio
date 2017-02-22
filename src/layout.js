@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './layout.css';
+import './layout.scss';
 
 import ProfileCard from './components/profile-card'
 import profileData from './data/profile';
@@ -7,7 +7,7 @@ import profileData from './data/profile';
 export default class Layout extends Component {
   render() {
     return (
-      <div>
+      <div className="layout">
         <div className="left-panel">
           <ProfileCard {...profileData}/>
           <div>Activity Feed</div>
