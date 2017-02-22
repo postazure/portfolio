@@ -1,5 +1,5 @@
 import React from "react"
-import SkillsList from "./skills-list"
+import SkillsList from "../skills/skills-list"
 
 export default class ProfileCard extends React.Component {
   render() {

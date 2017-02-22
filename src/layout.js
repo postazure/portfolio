@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './layout.scss';
 
-import ProfileCard from './components/profile-card'
+import ProfileCard from './components/profile/profile-card'
 import profileData from './data/profile';
 
 export default class Layout extends Component {

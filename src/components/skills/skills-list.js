@@ -1,7 +1,7 @@
 import React from "react"
 import './skill-list.scss'
 
-import Icon from './icon'
+import Icon from '../utils/icon'
 
 export default class SkillsList extends React.Component {
   renderItem() {
