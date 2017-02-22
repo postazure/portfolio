@@ -106,7 +106,9 @@ module.exports = {
           /\.css$/,
           /\.json$/,
           /\.svg$/,
-          /\.scss$/
+          /\.scss$/,
+          /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/
         ],
         loader: 'url',
         query: {
@@ -147,13 +149,8 @@ module.exports = {
         loader: 'json'
       },
       // "file" loader for svg
-      {
-        test: /\.svg$/,
-        loader: 'file',
-        query: {
-          name: 'static/media/[name].[hash:8].[ext]'
-        }
-      }
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.
     ],

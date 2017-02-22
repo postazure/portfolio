@@ -1,9 +1,17 @@
 import React from "react"
 import './skill-list.scss'
+
+import Icon from './icon'
+
 export default class SkillsList extends React.Component {
   renderItem() {
     return this.props.items.map((item, i) => {
-      return <li key={i}>{item.title}</li>
+      return (
+        <li key={i}>
+          <Icon name="rocket"/>
+          {item.title}
+        </li>
+      )
     })
   }
 
