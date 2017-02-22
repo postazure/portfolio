@@ -8,7 +8,7 @@ export default class SkillsList extends React.Component {
     return this.props.items.map((item, i) => {
       return (
         <li key={i}>
-          <Icon name="rocket"/>
+          <Icon name="terminal"/>
           {item.title}
         </li>
       )

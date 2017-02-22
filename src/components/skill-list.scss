@@ -1,14 +1,19 @@
+@import '../colors';
+
 .skill-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+
+  padding-left: 0;
 
   >li {
     list-style: none;
     display: inline;
 
     .icon {
-      color: red;
+      color: $dusty-grey;
+      margin-right: 10px;
     }
   }
 }
