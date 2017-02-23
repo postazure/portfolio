@@ -1,4 +1,6 @@
 import React from "react"
+import './profile-card.scss'
+
 import SkillsList from "../skills/skills-list"
 
 export default class ProfileCard extends React.Component {

@@ -1,0 +1,30 @@
+@import '../../colors';
+
+.profile-card {
+  border: solid $dusty-grey 1px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .name {
+    font-size: 21px;
+    font-weight: 400;
+
+    margin: 0;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+
+    color: $dusty-grey;
+
+    margin: 0;
+  }
+
+  .company-name {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
