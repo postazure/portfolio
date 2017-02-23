@@ -4,6 +4,8 @@ import './layout.scss';
 import ProfileCard from './components/profile/profile-card'
 import profileData from './data/profile';
 
+import MainView from './components/main-view'
+
 export default class Layout extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ export default class Layout extends Component {
           <div>Activity Feed</div>
         </div>
         <div className="view-panel">
-          <div>View Panel</div>
+          <MainView/>
         </div>
       </div>
     );
