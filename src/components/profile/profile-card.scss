@@ -1,11 +1,8 @@
-@import '../../colors';
+@import '../../styles/colors';
+@import '../../styles/borders';
 
 .profile-card {
-  border: solid $dusty-grey 1px;
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-
+  @extend .borders.thin;
   .name {
     font-size: 21px;
     font-weight: 400;
@@ -26,5 +23,9 @@
   .company-name {
     font-size: 14px;
     font-weight: lighter;
+  }
+
+  hr {
+    @extend .hrs.faded;
   }
 }

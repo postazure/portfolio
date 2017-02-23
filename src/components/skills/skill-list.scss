@@ -1,15 +1,10 @@
-@import '../../colors';
+@import '../../styles/colors';
 
 .skill-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   padding-left: 0;
 
   >li {
     list-style: none;
-    display: inline;
 
     .icon {
       color: $dusty-grey;
