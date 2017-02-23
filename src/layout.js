@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {Router, Route, browserHistory} from 'react-router'
+
 import './layout.scss';
 
 import ProfileCard from './components/profile/profile-card'
@@ -15,7 +17,11 @@ export default class Layout extends Component {
           <div>Activity Feed</div>
         </div>
         <div className="view-panel">
-          <MainView/>
+          <Router history={browserHistory}>
+            <Route path="/" component={props => <MainView><div>About</div></MainView>}/>
+            <Route path="apps" component={props => <MainView><div>Apps</div></MainView>}/>
+            <Route path="games" component={props => <MainView><div>Games</div></MainView>}/>
+          </Router>
         </div>
       </div>
     );
