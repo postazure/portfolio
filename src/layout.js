@@ -4,7 +4,7 @@ import './layout.scss';
 import ProfileCard from './components/profile/profile-card'
 import profileData from './data/profile';
 
-import MainView from './components/main-view'
+import MainView from './components/main-view/main-view'
 
 export default class Layout extends Component {
   render() {
