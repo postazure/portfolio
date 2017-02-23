@@ -2,9 +2,9 @@
 
 .borders {
   &.thin {
-    border: solid $dusty-grey 1px;
-    border-radius: 6px;
+    border-radius: 3px;
     padding: 15px;
+    box-shadow: 0 1px 3px 0 $dusty-grey, 0 0 0 1px #d4d4d5;
   }
 }
 
