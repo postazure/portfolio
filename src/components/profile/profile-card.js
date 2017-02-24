@@ -9,7 +9,7 @@ export default class ProfileCard extends React.Component {
       <div className="profile-card">
         <h1 className="name">{this.props.name}</h1>
         <h2 className="title">{this.props.title}</h2>
-        <div className="company-name">{this.props.company}</div>
+        <h3 className="company-name">{this.props.company}</h3>
 
         <SkillsList items={this.props.skills}/>
         <hr/>

@@ -1,0 +1,23 @@
+@import './colors';
+
+h1 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  font-style: italic;
+
+  color: $dusty-grey;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+*{
+  font-size: 14px;
+}

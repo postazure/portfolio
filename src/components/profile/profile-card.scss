@@ -4,25 +4,18 @@
 .profile-card {
   @extend .borders.thin;
   .name {
-    font-size: 21px;
-    font-weight: 400;
-
-    margin: 0;
+    margin: 0 0 3px;
+    white-space: nowrap;
   }
 
   .title {
-    font-size: 16px;
-    font-weight: lighter;
-    font-style: italic;
-
-    color: $dusty-grey;
-
-    margin: 0;
+    margin: 0 0 3px;
+    white-space: nowrap;
   }
 
   .company-name {
-    font-size: 14px;
-    font-weight: lighter;
+    margin: 0 0 3px;
+    white-space: nowrap;
   }
 
   hr {
