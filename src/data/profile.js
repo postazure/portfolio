@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   name: 'Max Gordon',
   company: 'Pivotal Software',
   title: 'Software Developer',

@@ -7,6 +7,7 @@ import ProfileCard from './components/profile/profile-card'
 import profileData from './data/profile';
 
 import MainView from './components/main-view/main-view'
+import AppsView from './views/apps'
 
 export default class Layout extends Component {
   render() {
@@ -18,9 +19,9 @@ export default class Layout extends Component {
         </div>
         <div className="view-panel">
           <Router history={browserHistory}>
-            <Route path="/" component={props => <MainView {...props}><div>About</div></MainView>}/>
-            <Route path="apps" component={props => <MainView {...props}><div>Apps</div></MainView>}/>
-            <Route path="games" component={props => <MainView {...props}><div>Games</div></MainView>}/>
+            <Route path="/" component={props => <MainView {...props}>About</MainView>}/>
+            <Route path="apps" component={props => <MainView {...props}><AppsView/></MainView>}/>
+            <Route path="games" component={props => <MainView {...props}>Games</MainView>}/>
           </Router>
         </div>
       </div>
