@@ -1,0 +1,36 @@
+@import '../../styles/borders';
+@import '../../styles/colors';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style: none;
+
+  @extend .borders.thin;
+  padding: 0;
+
+  margin: 0;
+
+  >li {
+    flex: 1;
+    margin: 0;
+
+    border-right: $pale-slate 1px solid;
+
+    display: flex;
+
+    >a{
+      text-align: center;
+      padding: 15px 30px;
+      width: 100%;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  >li:last-child {
+    border-right: 0;
+  }
+}
