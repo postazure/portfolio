@@ -6,7 +6,7 @@ export default class MainView extends React.Component {
   render() {
     return (
       <div className="main-view">
-        <NavBar/>
+        <NavBar location={this.props.location.pathname}/>
         {this.props.children}
       </div>
     )

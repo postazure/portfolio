@@ -18,9 +18,9 @@ export default class Layout extends Component {
         </div>
         <div className="view-panel">
           <Router history={browserHistory}>
-            <Route path="/" component={props => <MainView><div>About</div></MainView>}/>
-            <Route path="apps" component={props => <MainView><div>Apps</div></MainView>}/>
-            <Route path="games" component={props => <MainView><div>Games</div></MainView>}/>
+            <Route path="/" component={props => <MainView {...props}><div>About</div></MainView>}/>
+            <Route path="apps" component={props => <MainView {...props}><div>Apps</div></MainView>}/>
+            <Route path="games" component={props => <MainView {...props}><div>Games</div></MainView>}/>
           </Router>
         </div>
       </div>
