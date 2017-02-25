@@ -1,0 +1,6 @@
+@import "../../styles/borders";
+
+.project-card {
+  @extend .borders.thin;
+  margin: 10px 0;
+}

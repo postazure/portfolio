@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './project-card'
+import './project-list.scss'
 
 export default class ProjectList extends React.Component {
   render() {
