@@ -2,6 +2,7 @@ import React from "react"
 import './profile-card.scss'
 
 import SkillsList from "../skills/skills-list"
+import SocialList from "../social/social-list"
 
 export default class ProfileCard extends React.Component {
   render() {
@@ -13,7 +14,7 @@ export default class ProfileCard extends React.Component {
 
         <SkillsList items={this.props.skills}/>
         <hr/>
-        <div>Social List</div>
+        <SocialList items={this.props.social}/>
       </div>
     )
   }
