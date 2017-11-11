@@ -1,0 +1,16 @@
+.preview-panel {
+  &.about {
+    .name {
+      margin-top: 12px;
+    }
+    .summary {
+      margin: 32px 0;
+    }
+
+    .article {
+      &:not(:last-of-type) {
+        border-bottom: solid 2px lightblue;
+      }
+    }
+  }
+}

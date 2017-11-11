@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ItemFrame from '../layout/item-frame'
+import ItemFrame from '../item-frame/item-frame'
 import classnames from 'classnames'
 import './project-collection.css'
+import {Link} from 'react-router-dom'
 
 const ProjectItem = props => (
   <ItemFrame size={ItemFrame.size.SMALL} className={classnames('project', {selected: props.selected})}>
@@ -19,6 +20,7 @@ ProjectItem.propTypes = {
   github: PropTypes.string,
   host: PropTypes.string
 }
+const buildPathInfo = project => ({pathname: `/projects/${project.name.replace(' ', '+')}`, state: project})
 
 export default class ProjectCollection extends React.Component {
 
@@ -37,7 +39,7 @@ export default class ProjectCollection extends React.Component {
     let classes = classnames('menu')
     const projects = this.props.projects
       .filter(p => p.github !== this.state.selected.github)
-      .map(p => <div onClick={() => this.handleClick(p)} key={p.github}><ProjectItem {...p}/></div>)
+      .map(p => <Link to={buildPathInfo(p)} key={p.github} onClick={() => this.handleClick(p)}><ProjectItem {...p}/></Link>)
     return <div className={classes}>{projects}</div>
   }
 
@@ -55,6 +57,6 @@ export default class ProjectCollection extends React.Component {
 
   static propTypes = {
     title: PropTypes.string.isRequired,
-    projects: PropTypes.arrayOf(ProjectItem.propTypes).isRequired
+    projects: PropTypes.arrayOf(PropTypes.shape(ProjectItem.propTypes)).isRequired
   }
 }
