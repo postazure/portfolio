@@ -1,0 +1,26 @@
+.profile-card {
+  .name {
+    margin-top: 32px;
+    padding-bottom: 16px;
+    border-bottom: solid 3px lightblue;
+  }
+
+  .company, .location {
+    font-weight: 100;
+  }
+
+  .title {
+    font-weight: 100;
+    font-style: italic;
+  }
+
+
+  .social {
+    border-top: solid 3px lightblue;
+    padding: 4px 0;
+
+    .fa {
+      margin: 16px 32px 0 0;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.project-collection {
+  padding: 0 0 0 32px;
+
+  .interactive {
+    display: flex;
+    flex-direction: row;
+
+    .project {
+      margin: 8px;
+      &.selected {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+    }
+
+    .menu {
+      width: 380px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      max-width: 240px;
+    }
+  }
+}
