@@ -1,9 +1,10 @@
 {
   "name": "Max Gordon",
+  "email": "gordonmaxc@gmail.com",
   "company": "Pivotal",
   "title": "Software Engineer",
   "location": "San Francisco, CA",
-  "profilePicUrl": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/profilepic.jpg",
+  "picture": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/profilepic.jpg",
   "github": "https://github.com/postazure",
   "linkedin": "https://www.linkedin.com/in/maxcgordon/",
   "summary": "Experienced full-stack application developer proficient in multiple languages and technical stacks. Excels at cross functional communication. Comfortable explaining technical tradeoffs to non-technical stakeholders. Passionate about improving workflow for the entire team."

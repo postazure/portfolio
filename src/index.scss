@@ -10,7 +10,7 @@ body {
   background: radial-gradient(circle at center, #515151, #000000);
   background-attachment: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 a {
@@ -40,16 +40,17 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 
-  .profile-column {
-    max-width: 220px;
-    min-width: 180px;
-  }
+  .column {
+    flex: 1;
+    margin-left: 8px;
+    margin-right: 8px;
 
-  .project-column {
-    min-width: 360px;
-  }
+    .project {
+      margin: 0 32px;
+    }
 
-  .preview-column {
-    max-width: 900px;
+    &.preview {
+      flex: 3;
+    }
   }
 }

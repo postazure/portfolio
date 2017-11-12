@@ -27,14 +27,14 @@ const findProjectIfNeeded = (routeState) => {
 const app = (
   <Router>
     <div className='container'>
-      <div className='profile-column'>
+      <div className='profile column'>
         <ProfileCard {...profileData}/>
       </div>
-      <div className='project-column'>
+      <div className='project column'>
         {projectSections.sort(section => section.rank).map(section => (
           <ProjectCollection projects={section.projects} title={section.title} key={section.rank}/>))}
       </div>
-      <div className='preview-column'>
+      <div className='preview column'>
         <Route path='/about' exact
                component={props => <AboutPreviewPanel {...props} {...profileData}/>}/>
         <Redirect from="/" to="/about"/>

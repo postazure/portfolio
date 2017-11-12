@@ -19,7 +19,7 @@ export default class ProjectPreviewPanel extends React.PureComponent {
     <div className='preview'>
       {
         this.props.video
-          ? <iframe width="448" height="252" src={this.props.video} frameborder="0" allowfullscreen/>
+          ? <iframe width="300" height="168.75" src={this.props.video} frameborder="0" allowfullscreen='allowfullscreen'/>
           : <img src={this.props.picture} alt=''/>
       }
     </div>

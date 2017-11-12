@@ -8,7 +8,7 @@ body {
   background: radial-gradient(circle at center, #515151, #000000);
   background-attachment: fixed;
   display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
 
 a:visited {
   color: unset; }
@@ -30,10 +30,11 @@ h2 {
 .container {
   display: flex;
   flex-wrap: wrap; }
-  .container .profile-column {
-    max-width: 220px;
-    min-width: 180px; }
-  .container .project-column {
-    min-width: 360px; }
-  .container .preview-column {
-    max-width: 900px; }
+  .container .column {
+    flex: 1;
+    margin-left: 8px;
+    margin-right: 8px; }
+    .container .column .project {
+      margin: 0 32px; }
+    .container .column.preview {
+      flex: 3; }

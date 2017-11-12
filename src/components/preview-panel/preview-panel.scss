@@ -37,35 +37,39 @@
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
-      padding:0 15px;
+      padding: 0 15px;
       margin-right: 8px;
-      text-decoration:none;
-      font-size:12px;
-      font-weight:bold;
-      line-height:32px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 32px;
       height: auto;
-      text-align:center;
+      text-align: center;
     }
   }
 
   .content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     line-height: 24px;
 
     .description {
       flex: 1;
-      margin: 0 8px;
+      margin: 0 8px 32px 8px;
     }
 
     .preview {
       flex: 1;
-      width: 448px;
-      height: 252px;
-      box-shadow: 9px 8px 20px -5px black;
+      width: 300px;
+      height: auto;
+
+      iframe {
+        box-shadow: 9px 8px 20px -5px black;
+      }
 
       img {
-        width: 448px;
+        width: 300px;
         height: auto;
         box-shadow: 9px 8px 20px -5px black;
       }
