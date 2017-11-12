@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://postazure.github.io",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build -b master -o gh-pages",
   "dependencies": {
     "classnames": "^2.2.5",
     "node-sass-chokidar": "0.0.3",

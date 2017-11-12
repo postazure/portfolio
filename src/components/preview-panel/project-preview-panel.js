@@ -43,7 +43,9 @@ export default class ProjectPreviewPanel extends React.PureComponent {
           {this.renderPreview()}
         </div>
 
+        <div className="tags">
         {this.renderTags()}
+        </div>
       </div>
     )
   }

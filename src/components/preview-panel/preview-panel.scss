@@ -25,18 +25,41 @@
     }
   }
 
+  .tags {
+    display: flex;
+    flex-direction: row;
+    margin: 64px 8px;
+
+    .tag {
+      color: black;
+      background-color: lightblue;
+      display: inline-block;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding:0 15px;
+      margin-right: 8px;
+      text-decoration:none;
+      font-size:12px;
+      font-weight:bold;
+      line-height:32px;
+      height: auto;
+      text-align:center;
+    }
+  }
+
   .content {
     display: flex;
     flex-direction: row;
     line-height: 24px;
 
     .description {
-      flex:1;
+      flex: 1;
       margin: 0 8px;
     }
 
     .preview {
-      flex:1;
+      flex: 1;
       width: 448px;
       height: 252px;
       box-shadow: 9px 8px 20px -5px black;
