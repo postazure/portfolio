@@ -37,7 +37,7 @@ const app = (
       <div className='preview column'>
         <Route path='/about' exact
                component={props => <AboutPreviewPanel {...props} {...profileData}/>}/>
-        <Redirect from="/" to="/about"/>
+        <Redirect exact from="/" to="/about"/>
         <Route path='/projects/:sectionName/:projectName'
                component={props => <ProjectPreviewPanel {...findProjectIfNeeded(props)}/>}/>
       </div>
