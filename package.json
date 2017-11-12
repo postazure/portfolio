@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://postazure.github.io",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build -b master -o gh-pages",
   "dependencies": {
     "classnames": "^2.2.5",
     "node-sass-chokidar": "0.0.3",
@@ -26,7 +24,9 @@
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b master -r 'git@github.com:postazure/postazure.github.io.git'"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0"
