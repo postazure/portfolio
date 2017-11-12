@@ -9,9 +9,17 @@ import ProjectPreviewPanel from './components/preview-panel/project-preview-pane
 import AboutPreviewPanel from './components/preview-panel/about-preview-panel'
 
 import profileData from './data/profile.json'
-import articleData from './data/articles.json'
 import projectData from './data/projects.json'
+
 const projectSections = projectData.sort(s => s.rank)
+
+const findProjectIfNeeded = (routeState) => {
+  if (routeState.location.state.name) {
+    return routeState.location.state
+  }
+  let projecNameFromRoute = routeState.match.params.projectName.replace('+', ' ')
+  return projectData[routeState.match.params.sectionName].projects.find(p => p.name === projecNameFromRoute)
+}
 
 const app = (
   <Router>
@@ -23,8 +31,12 @@ const app = (
         {projectSections.map(section => (
           <ProjectCollection projects={section.projects} title={section.title} key={section.rank}/>))}
       </div>
-      <Route path="/" exact component={() => <AboutPreviewPanel {...profileData} articles={articleData}/>}/>
-      <Route path="/projects/" component={ProjectPreviewPanel}/>
+      <div className='preview-column'>
+        <Route path='/' exact
+               component={props => <AboutPreviewPanel {...props} {...profileData}/>}/>
+        <Route path='/projects/:sectionName/:projectName'
+               component={props => <ProjectPreviewPanel {...findProjectIfNeeded(props)}/>}/>
+      </div>
     </div>
   </Router>
 )

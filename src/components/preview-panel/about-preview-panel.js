@@ -1,15 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class AboutPreviewPanel extends React.PureComponent {
-
-  renderArticles = () => {
-    this.props.articles
-      .sort(a => a.rank)
-      .map(a => (
-        <div className='article'>
-          <h2>{a.title}</h2>
-          {a.content.map((c, i) => <div key={i}>{c}</div>)}
-        </div>))
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    articles: PropTypes.arrayOf(PropTypes.shape({
+      rank: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      content: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
+    })).isRequired
   }
 
   render () {
@@ -18,7 +19,6 @@ export default class AboutPreviewPanel extends React.PureComponent {
         <h1 className='name'>{this.props.name}</h1>
         <div className='title'>{this.props.title}</div>
         <div className='summary'>{this.props.summary}</div>
-        {this.renderArticles()}
       </div>
     )
   }

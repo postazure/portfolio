@@ -4,9 +4,11 @@ body {
   font-family: sans-serif;
   line-height: 32px;
   color: lightblue;
-  background-color: #515151;
+  background: #000000;
+  background: radial-gradient(circle at center, #515151, #000000);
+  background-attachment: fixed;
   display: flex;
-  flex-direction: column; }
+  justify-content: center; }
 
 a:visited {
   color: unset; }
@@ -27,9 +29,11 @@ h2 {
 
 .container {
   display: flex;
-  align-content: center; }
+  flex-wrap: wrap; }
   .container .profile-column {
     max-width: 220px;
     min-width: 180px; }
   .container .project-column {
     min-width: 360px; }
+  .container .preview-column {
+    max-width: 900px; }

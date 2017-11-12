@@ -20,7 +20,6 @@ ProjectItem.propTypes = {
   github: PropTypes.string,
   host: PropTypes.string
 }
-const buildPathInfo = project => ({pathname: `/projects/${project.name.replace(' ', '+')}`, state: project})
 
 export default class ProjectCollection extends React.Component {
 
@@ -31,6 +30,8 @@ export default class ProjectCollection extends React.Component {
     }
   }
 
+  buildPathInfo = project => ({pathname: `/projects/${this.props.title}/${project.name.replace(' ', '+')}`, state: project})
+
   handleClick = (project) => {this.setState({selected: project})}
 
   renderSelectedProject = () => <div><ProjectItem selected {...this.state.selected}/></div>
@@ -39,7 +40,7 @@ export default class ProjectCollection extends React.Component {
     let classes = classnames('menu')
     const projects = this.props.projects
       .filter(p => p.github !== this.state.selected.github)
-      .map(p => <Link to={buildPathInfo(p)} key={p.github} onClick={() => this.handleClick(p)}><ProjectItem {...p}/></Link>)
+      .map(p => <Link to={this.buildPathInfo(p)} key={p.github} onClick={() => this.handleClick(p)}><ProjectItem {...p}/></Link>)
     return <div className={classes}>{projects}</div>
   }
 

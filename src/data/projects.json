@@ -13,49 +13,31 @@
         "host": null
       },
       {
-        "name": "Popular News",
+        "name": "Delivery Now SF",
         "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
         "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news1",
-        "host": null
+        "tags": ["Ruby", "Rails", "Javascript"],
+        "description": "Find the restaurant and service that can make a delivery to you in San Francisco, even at dinner time. When you make it home from a long day of work and just want to decompress, the last thing you want to have to deal with is making dinner. You should probably place a delivery order. The only problem is your hungry now and all the restaurants you normaly get delivery from are posting an hour and a half wait. Delivery Now SF to the rescue. Search for the kind of food you want and this app will find the fastest way to get it to you.",
+        "github": "https://github.com/postazure/OrderNow-FrontEnd",
+        "host": "http://www.deliverynowsf.com/"
       },
       {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
+        "name": "Secret Santa Selector",
+        "picture": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/secretsanta.png",
         "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news2",
-        "host": null
+        "tags": ["Rails", "Ruby"],
+        "description": "Make that secret santa drawing go by without a hitch. Each year our family draws names out of a hat, but you're not allowed to draw yourself or your spouse. With three couples, the odds are pretty good you'll have to draw again... and again... and again. Enter Secret Santa Selector, a simple web app to perform the drawing and email each member secretly so that even the organizer can join in the suprise.",
+        "github": "https://github.com/postazure/Secret_Santa_Stocking_Selector",
+        "host": "https://postazure-secret-santa.herokuapp.com/users/sign_in"
       },
       {
-        "name": "Popular News",
-        "picture": "http://coolvibe.com/wp-content/uploads/2015/08/3d-Scifi-Florin-Enache-Forward-To-The-Future.jpg",
+        "name": "Twitter Heat Map",
+        "picture": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/twitterheatmap.png",
         "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news3",
-        "host": null
-      },
-      {
-        "name": "Popular News",
-        "picture": "https://cdn.uploadvr.com/wp-content/uploads/2016/11/accelerando.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news4",
-        "host": null
-      },
-      {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news5",
-        "host": null
+        "tags": ["Ember", "Javascript"],
+        "description": "Plots tweets by location in San Francisco. Using Heroku Scheduler to run rake tasks to collects recent tweets and displays them on a map of San Francisco. This application requires a custom record serializer to output side-loaded json. The popular gem for record serializers does not handle 'many-to-many' associations properly.",
+        "github": "https://github.com/postazure/twitter-heatmap-FrontEnd",
+        "host": "https://postazure-t-heatmap-display.herokuapp.com/"
       }
     ]
   },
@@ -64,58 +46,38 @@
     "title": "games",
     "projects": [
       {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news",
-        "host": null
+        "name": "Expedition 1906",
+        "description": "The year is 1906, and you're Norwegian explorer Roald Amundsen. You and your men have undertaken a great challenge -- to explore the northern reaches and discover what lies beyond. Just make sure to not run out of food before you reach the critical passage.",
+        "picture": "https://ggj.s3.amazonaws.com/styles/feature_image__narrow/games/screenshots/screen_shot_2017-01-22_at_2.32.44_pm.png?itok=4QO3jJXS&timestamp=1485124392",
+        "video": "https://www.youtube.com/embed/wNWVM3-_5nE",
+        "tags": ["Unity"],
+        "host": "https://globalgamejam.org/2017/games/expedition-1906",
+        "github": "https://github.com/Myztiq/ShipIt"
       },
       {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news1",
-        "host": null
+        "name": "Ritualistic Dungeon Crawler",
+        "description": "Collect ritual books, bring them to an altar and unlock powerful magic to defeat your foes. Burn your enemy with Laser Vision or fireballs, Release a swarm of enchanted venomous bees, or launch a rocket sheep at your enemies using combo button mashing. Collect the heads of your foes 2 times and bring them to the alchemy circle to complete the ritual. NOTE: Requires at least 1 controller to play.",
+        "picture": "https://globalgamejam.org/sites/default/files/styles/feature_image__narrow/public/games/screenshots/screenshot_106.jpg?itok=ici26gde&timestamp=1454276428",
+        "video": "https://www.youtube.com/embed/zAkQyjR5PiI",
+        "tags": ["javascript", "ImpactJS"],
+        "host": "https://globalgamejam.org/2016/games/ritualistic-dungeon-crawler",
+        "github": "https://github.com/Myztiq/ritual-crawler"
       },
       {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news2",
-        "host": null
+        "name": "Boredom Simulator",
+        "picture": "https://globalgamejam.org/sites/default/files/styles/feature_image__narrow/public/games/screenshots/screen_shot_2015-01-25_at_2.02.28_pm.png?itok=Ds8O_Bwd&timestamp=1422223471",
+        "description": "It's Saturday night, you are waiting for your friends to come pick you up. Maintain your boredom levels or you might just fall asleep and miss your friends picking you up.",
+        "tags": ["javascript", "jquery"],
+        "host": "http://globalgamejam.org/2015/games/boredom-simulator",
+        "github": "https://github.com/Myztiq/boredom-simulator"
       },
       {
-        "name": "Popular News",
-        "picture": "http://coolvibe.com/wp-content/uploads/2015/08/3d-Scifi-Florin-Enache-Forward-To-The-Future.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news3",
-        "host": null
-      },
-      {
-        "name": "Popular News",
-        "picture": "https://cdn.uploadvr.com/wp-content/uploads/2016/11/accelerando.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news4",
-        "host": null
-      },
-      {
-        "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
-        "github": "https://github.com/postazure/popular-news5",
-        "host": null
+        "name": "Down With The Drones",
+        "picture": "",
+        "description": "Get your swarm of mind controlled followers into their respective holes. Each wrong step will cost you and all the while the clock is counting down.",
+        "tags": ["javascript", "ImpactJS"],
+        "host": "http://www.downwiththedrones.com/",
+        "github": "https://github.com/Myztiq/downWithDrones"
       }
     ]
   }
