@@ -21,26 +21,23 @@ ProjectItem.propTypes = {
   host: PropTypes.string
 }
 
-export default class ProjectCollection extends React.Component {
+export default class ProjectCollection extends React.PureComponent {
 
   constructor (props) {
     super(props)
     this.state = {
-      selected: props.projects[0]
+      selected: {}
     }
   }
 
-  buildPathInfo = project => ({pathname: `/projects/${this.props.title}/${project.name.replace(' ', '+')}`, state: project})
+  buildPathInfo = project => ({pathname: `/projects/${this.props.title}/${project.name.replace(/\s/g, '+')}`, state: project})
 
   handleClick = (project) => {this.setState({selected: project})}
-
-  renderSelectedProject = () => <div><ProjectItem selected {...this.state.selected}/></div>
 
   renderProjectMenu = () => {
     let classes = classnames('menu')
     const projects = this.props.projects
-      .filter(p => p.github !== this.state.selected.github)
-      .map(p => <Link to={this.buildPathInfo(p)} key={p.github} onClick={() => this.handleClick(p)}><ProjectItem {...p}/></Link>)
+      .map(p => <Link to={this.buildPathInfo(p)} key={p.github} onClick={()=>this.handleClick(p)}><ProjectItem {...p} selected={p.github === this.state.selected.github}/></Link>)
     return <div className={classes}>{projects}</div>
   }
 
@@ -49,7 +46,6 @@ export default class ProjectCollection extends React.Component {
       <div className='project-collection'>
         <h2>/{this.props.title}</h2>
         <div className='interactive'>
-          {this.renderSelectedProject()}
           {this.renderProjectMenu()}
         </div>
       </div>

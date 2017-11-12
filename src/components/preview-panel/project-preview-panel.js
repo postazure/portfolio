@@ -25,7 +25,7 @@ export default class ProjectPreviewPanel extends React.PureComponent {
     </div>
   )
 
-  renderTags = () => this.props.tags.map(tag => <div className='tag'>{tag}</div>)
+  renderTags = () => this.props.tags.map(tag => <div className='tag' key={tag}>{tag}</div>)
 
   render () {
     return (

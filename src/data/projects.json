@@ -5,21 +5,20 @@
     "projects": [
       {
         "name": "Popular News",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
-        "video": "",
-        "tags": [],
-        "description": "Cool App",
+        "picture": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/popularnews.png",
+        "video": "https://www.youtube.com/embed/PctpEdKm6pk",
+        "tags": ["react native", "iOS"],
+        "description": "Have your other news aggregators become echo chambers? Read an article about some medical study and now the only articles you see are about horrifying new diseases? Popular news doesn't record your tastes, instead, it taps into a community-curated source of articles. You see the top stories as they happen as well as interesting local stories that often don't make it to the national spotlight. Features: Manage your feed - Articles are dismissed from your feed once you read them, or you can tap and hold to dismiss them. Don't worry you can re-read them if you like. Night mode - Night mode allows you to browse the news in a dark room without blinding yourself.",
         "github": "https://github.com/postazure/popular-news",
         "host": null
       },
       {
         "name": "Delivery Now SF",
-        "picture": "https://i.pinimg.com/736x/3f/87/1f/3f871f526375fe52473c220d13f0017b--futuristic-ships-futuristic-glasses.jpg",
+        "picture": "https://s3-us-west-2.amazonaws.com/postazure-portfolio/ordernow.png",
         "video": "",
         "tags": ["Ruby", "Rails", "Javascript"],
         "description": "Find the restaurant and service that can make a delivery to you in San Francisco, even at dinner time. When you make it home from a long day of work and just want to decompress, the last thing you want to have to deal with is making dinner. You should probably place a delivery order. The only problem is your hungry now and all the restaurants you normaly get delivery from are posting an hour and a half wait. Delivery Now SF to the rescue. Search for the kind of food you want and this app will find the fastest way to get it to you.",
-        "github": "https://github.com/postazure/OrderNow-FrontEnd",
-        "host": "http://www.deliverynowsf.com/"
+        "github": "https://github.com/postazure/OrderNow-FrontEnd"
       },
       {
         "name": "Secret Santa Selector",
@@ -36,8 +35,7 @@
         "video": "",
         "tags": ["Ember", "Javascript"],
         "description": "Plots tweets by location in San Francisco. Using Heroku Scheduler to run rake tasks to collects recent tweets and displays them on a map of San Francisco. This application requires a custom record serializer to output side-loaded json. The popular gem for record serializers does not handle 'many-to-many' associations properly.",
-        "github": "https://github.com/postazure/twitter-heatmap-FrontEnd",
-        "host": "https://postazure-t-heatmap-display.herokuapp.com/"
+        "github": "https://github.com/postazure/twitter-heatmap-FrontEnd"
       }
     ]
   },
@@ -70,14 +68,6 @@
         "tags": ["javascript", "jquery"],
         "host": "http://globalgamejam.org/2015/games/boredom-simulator",
         "github": "https://github.com/Myztiq/boredom-simulator"
-      },
-      {
-        "name": "Down With The Drones",
-        "picture": "",
-        "description": "Get your swarm of mind controlled followers into their respective holes. Each wrong step will cost you and all the while the clock is counting down.",
-        "tags": ["javascript", "ImpactJS"],
-        "host": "http://www.downwiththedrones.com/",
-        "github": "https://github.com/Myztiq/downWithDrones"
       }
     ]
   }

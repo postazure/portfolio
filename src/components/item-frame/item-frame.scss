@@ -1,3 +1,6 @@
+$small: 90px;
+$large: $small * 2;
+
 .item-frame {
   border: 5px solid lightblue;
   box-sizing: border-box;
@@ -8,13 +11,13 @@
   }
 
   &.small {
-    height: 64px;
-    width: 64px;
+    height: $small;
+    width: $small;
   }
 
   &.large {
-    height: 128px;
-    width: 128px;
+    height: $large;
+    width: $large;
   }
 
   &:hover, &.selected {

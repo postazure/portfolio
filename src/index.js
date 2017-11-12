@@ -14,11 +14,14 @@ import projectData from './data/projects.json'
 const projectSections = projectData.sort(s => s.rank)
 
 const findProjectIfNeeded = (routeState) => {
-  if (routeState.location.state.name) {
+  if (routeState.location.state && routeState.location.state.name) {
     return routeState.location.state
   }
-  let projecNameFromRoute = routeState.match.params.projectName.replace('+', ' ')
-  return projectData[routeState.match.params.sectionName].projects.find(p => p.name === projecNameFromRoute)
+  let projectNameFromRoute = routeState.match.params.projectName.replace(/\+/g, ' ')
+  return projectData
+    .find(s => s.title === routeState.match.params.sectionName)
+    .projects
+    .find(p => p.name === projectNameFromRoute)
 }
 
 const app = (
@@ -28,7 +31,7 @@ const app = (
         <ProfileCard {...profileData}/>
       </div>
       <div className='project-column'>
-        {projectSections.map(section => (
+        {projectSections.sort(section => section.rank).map(section => (
           <ProjectCollection projects={section.projects} title={section.title} key={section.rank}/>))}
       </div>
       <div className='preview-column'>
