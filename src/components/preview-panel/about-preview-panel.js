@@ -5,12 +5,7 @@ export default class AboutPreviewPanel extends React.PureComponent {
   static propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired,
-    articles: PropTypes.arrayOf(PropTypes.shape({
-      rank: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      content: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
-    })).isRequired
+    summary: PropTypes.string.isRequired
   }
 
   render () {

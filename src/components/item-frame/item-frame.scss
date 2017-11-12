@@ -4,6 +4,8 @@ $large: $small * 2;
 .item-frame {
   border: 5px solid lightblue;
   box-sizing: border-box;
+  overflow: hidden;
+  display: block;
 
   img {
     width: 100%;

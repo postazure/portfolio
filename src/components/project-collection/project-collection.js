@@ -1,15 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ItemFrame from '../item-frame/item-frame'
+import ItemFrameLink from '../item-frame/item-frame-link'
 import classnames from 'classnames'
 import './project-collection.css'
-import {Link} from 'react-router-dom'
 
-const ProjectItem = props => (
-  <ItemFrame size={ItemFrame.size.SMALL} className={classnames('project', {selected: props.selected})}>
-    <img src={props.picture} alt={props.name}/>
-  </ItemFrame>
-)
+const buildPathInfo = (project, section) => {
+  return {
+    pathname: `/projects/${section}/${project.name.replace(/\s/g, '+')}`,
+    state: project
+  }
+}
+
+const ProjectItem = props => {
+  const to = buildPathInfo(props.project, props.section)
+
+  return (
+    <ItemFrameLink size={ItemFrameLink.size.SMALL} className='project' to={to}>
+      <img src={props.project.picture} alt={props.project.name}/>
+    </ItemFrameLink>
+  )
+}
 
 ProjectItem.propTypes = {
   name: PropTypes.string.isRequired,
@@ -21,23 +31,12 @@ ProjectItem.propTypes = {
   host: PropTypes.string
 }
 
-export default class ProjectCollection extends React.PureComponent {
-
-  constructor (props) {
-    super(props)
-    this.state = {
-      selected: {}
-    }
-  }
-
-  buildPathInfo = project => ({pathname: `/projects/${this.props.title}/${project.name.replace(/\s/g, '+')}`, state: project})
-
-  handleClick = (project) => {this.setState({selected: project})}
+export default class ProjectCollection extends React.Component {
 
   renderProjectMenu = () => {
     let classes = classnames('menu')
     const projects = this.props.projects
-      .map(p => <Link to={this.buildPathInfo(p)} key={p.github} onClick={()=>this.handleClick(p)}><ProjectItem {...p} selected={p.github === this.state.selected.github}/></Link>)
+      .map(p => <ProjectItem project={p} section={this.props.title} key={p.github}/>)
     return <div className={classes}>{projects}</div>
   }
 

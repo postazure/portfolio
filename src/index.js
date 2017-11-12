@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import ProfileCard from './components/profile-card/profile-card'
 import registerServiceWorker from './registerServiceWorker'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import ProjectCollection from './components/project-collection/project-collection'
 import ProjectPreviewPanel from './components/preview-panel/project-preview-panel'
 import AboutPreviewPanel from './components/preview-panel/about-preview-panel'
@@ -35,8 +35,9 @@ const app = (
           <ProjectCollection projects={section.projects} title={section.title} key={section.rank}/>))}
       </div>
       <div className='preview-column'>
-        <Route path='/' exact
+        <Route path='/about' exact
                component={props => <AboutPreviewPanel {...props} {...profileData}/>}/>
+        <Redirect from="/" to="/about"/>
         <Route path='/projects/:sectionName/:projectName'
                component={props => <ProjectPreviewPanel {...findProjectIfNeeded(props)}/>}/>
       </div>

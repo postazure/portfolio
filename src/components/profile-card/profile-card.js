@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './profile-card.css'
-import {Link} from 'react-router-dom'
 
-import ItemFrame from '../item-frame/item-frame'
+import ItemFrameLink from '../item-frame/item-frame-link'
 import IconLink from '../icon-link/icon-link'
 
-export default class ProfileCard extends React.PureComponent {
+export default class ProfileCard extends React.Component {
   static propTypes = {
     profilePicUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -18,11 +17,9 @@ export default class ProfileCard extends React.PureComponent {
   render () {
     return (
       <div className='profile-card'>
-        <Link to='/'>
-          <ItemFrame size={ItemFrame.size.LARGE}>
+          <ItemFrameLink size={ItemFrameLink.size.LARGE} to='/about'>
             <img src={this.props.profilePicUrl} alt=""/>
-          </ItemFrame>
-        </Link>
+          </ItemFrameLink>
 
         <h1 className='name'>{this.props.name}</h1>
         <div className='company'>{this.props.company}</div>
