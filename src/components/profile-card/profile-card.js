@@ -18,7 +18,7 @@ export default class ProfileCard extends React.Component {
   render () {
     return (
       <div className='profile-card'>
-        <ItemFrameLink size={ItemFrameLink.size.LARGE} to='/about'>
+        <ItemFrameLink size={ItemFrameLink.size.LARGE} to='/'>
           <img src={this.props.picture} alt=''/>
         </ItemFrameLink>
 
